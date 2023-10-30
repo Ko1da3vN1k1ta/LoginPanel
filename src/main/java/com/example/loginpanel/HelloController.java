@@ -44,7 +44,7 @@ public class HelloController {
     @FXML
     protected void registerBtn() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("RegistrationPanel.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 400, 600);
         Stage stage = new Stage();
         stage.setTitle("Hello!");
         stage.setScene(scene);
