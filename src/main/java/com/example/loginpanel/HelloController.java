@@ -23,7 +23,7 @@ public class HelloController {
         if(DataBase.checkPassword(loginInput.getText(), passwordInput.getText())){
             System.out.println("yes");
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("HelloWindo.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 400, 400);
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
             Stage stage = new Stage();
             stage.setTitle("Hello!");
             stage.setScene(scene);
@@ -44,7 +44,7 @@ public class HelloController {
     @FXML
     protected void registerBtn() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("RegistrationPanel.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Hello!");
         stage.setScene(scene);
